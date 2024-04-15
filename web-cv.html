@@ -253,8 +253,26 @@ if (time < 12) {
   greeting2 = "Good Afternoon and Welcome @ Respected Sir/Madam.";
 } else {
   greeting2 = "Good Evening and Welcome @ Respected Sir/Madam.";
-}
-alert(greeting2 +"\n-Respected visitor...\nThis Website page best supported in PC or laptop.\nIf open link in mobail;please on desktop mode.\n"+ "\nvisit page date and time-\n"+ new Date + "\nyour faithfully@Aniruddha Mane.")
+};
+let smsa = prompt("Entrw your name.");
+function sdc() {
+    if (smsa === "" || smsa === null) {
+        alert("page request @ please ENTER your name")
+        window.location.reload();
+}else{
+    firsta_lert()
+};
+};sdc();
+
+function firsta_lert() {
+    if(smsa !== ""|| "null"){
+     
+alert("Hi.." + smsa + " "+ greeting2+ "\n-Respected visitor...\nThis Website page best supported in PC or laptop.\nIf open link in mobail;please on desktop mode.\n"+ "\nvisit page date and time-\n"+ new Date + "\nyour faithfully@Aniruddha Mane.")
+    }
+};
+
+
+
 
 var logoutbtn = document.querySelector("#logout");
 var bodyall = document.querySelector("#allpage");
